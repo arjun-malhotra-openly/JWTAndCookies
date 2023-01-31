@@ -70,6 +70,7 @@ func setTokenOnCookie(res http.ResponseWriter, req *http.Request) {
 
 func index(res http.ResponseWriter, req *http.Request) {
 	var message string
+	fmt.Println(message)
 	var retrievedClaimEmail string
 	c, err := req.Cookie("openly-session")
 	if err != nil {
